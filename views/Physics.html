@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><!--I have copied this link from bootstrap site,take it from the first link written as css link-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><!--Below three links I have copied this link from bootstrap site,take it from the second  link written as js link -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Physics</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2 class="display-4">Welcome to the Physics Quiz!</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="/students/physics" method="post" class="needs-validation" novalidate>
+                    <p id="forphysicsque">1.Radiocarbon is produced in the atmosphere as a result of</p>
+                    <ul>
+                        <li>
+                            collision between fast neutrons and nitrogen nuclei present in the atmosphere   
+                        </li>
+                        <li>
+                            action of ultraviolet light from the sun on atmospheric oxygen  
+                        </li>
+                        <li>
+                            action of solar radiations particularly cosmic rays on carbon dioxide present in the atmosphere
+                        </li>
+                        <li>
+                            lightning discharge in atmosphere   
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text"  name="opt11" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">2.It is easier to roll a stone up a sloping road than to lift it vertical upwards because</p>
+                      <ul>
+                        <li>
+                            work done in rolling is more than in lifting   
+                        </li>
+                        <li>
+                            work done in lifting the stone is equal to rolling it
+                        </li>
+                        <li>
+                            work done in both is same but the rate of doing work is less in rolling
+                        </li>
+                        <li>
+                            work done in rolling a stone is less than in lifting it
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt2" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">3.The absorption of ink by blotting paper involves</p>
+                      <ul>
+                        <li>
+                            viscosity of ink
+                        </li>
+                        <li>
+                            capillary action phenomenon
+                        </li>
+                        <li>
+                            diffusion of ink through the blotting
+                        </li>
+                        <li>
+                            siphon action
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt3" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">4.Siphon will fail to work if</p>
+                      <ul>
+                        <li>
+                            the densities of the liquid in the two vessels are equal
+                        </li>
+                        <li>
+                            the level of the liquid in the two vessels are at the same height
+                        </li>
+                        <li>
+                            both its limbs are of unequal length
+                        </li>
+                        <li>
+                            the temperature of the liquids in the two vessels are the same
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt4" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">5.Large transformers, when used for some time, become very hot and are cooled by circulating oil. The heating of the transformer is due to</p>
+                      <ul>
+                        <li>
+                            the heating effect of current alone
+                        </li>
+                        <li>
+                            hysteresis loss alone
+                        </li>
+                        <li>
+                            both the heating effect of current and hysteresis loss
+                        <li>
+                            intense sunlight at noon
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt5" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <button type="submit" id="physicssubmission" class="btn btn-info">Submit</button>
+                    </form>
+                    <script>
+                        (function() {
+                         'use strict';
+                         window.addEventListener('load', function() {
+                           var forms = document.getElementsByClassName('needs-validation');
+                           var validation = Array.prototype.filter.call(forms, function(form) {
+                             form.addEventListener('submit', function(event) {
+                               if (form.checkValidity() === false) {
+                                 event.preventDefault();
+                                 event.stopPropagation();
+                               }
+                               form.classList.add('was-validated');
+                             }, false);
+                           });
+                         }, false);
+                       })();
+                       </script>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="skill1"><a href="mailto:ravimehra1264@gmail.com"><img id="forgmail" src="/gmail.png"></a></div>
+            <div class="skill2"><p id="forphone">+919102904391</p></div>
+            <div class="skill3"><img id="forcall" src="/for phone.png"></div>
+            <div class="skill4"><a href="/"><img src="/book.gif"></a></div>
+        </div>
+    </body>
+</html>

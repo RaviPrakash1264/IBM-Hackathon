@@ -118,7 +118,7 @@ app.post('/students/physics',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  physicsquiz(opt11,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
+        const sql= 'INSERT INTO  physicsquiz(opt1,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
         const params = [request.body.opt11,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5];
         return client.query(sql,params);
     })
@@ -133,12 +133,10 @@ app.post('/students/physics',(request,response)=>{
 app.post('/students/chemistry',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
-
+            connectionString: process.env.DATABASE_URL,
+            ssl: {
+              rejectUnauthorized: false
+            }
     });
     client.connect()
     .then(()=>{
@@ -158,11 +156,10 @@ app.post('/students/chemistry',(request,response)=>{
 app.post('/students/maths',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
 
     });
     client.connect()
@@ -183,12 +180,10 @@ app.post('/students/maths',(request,response)=>{
 app.post('/students/english',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
-
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
     });
     client.connect()
     .then(()=>{

@@ -40,12 +40,10 @@ app.get('/thanks2',(request,response)=>{
 app.post('/students/add',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
-
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
     });
     client.connect()
     .then(()=>{
@@ -65,12 +63,10 @@ app.post('/students/add',(request,response)=>{
 app.post('/teachers/add',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
-
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
     });
     client.connect()
     .then(()=>{
@@ -90,11 +86,10 @@ app.post('/teachers/add',(request,response)=>{
 app.post('/teachers/addque',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
 
     });
     client.connect()
@@ -115,12 +110,10 @@ app.post('/teachers/addque',(request,response)=>{
 app.post('/students/physics',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user:'postgres',
-        host: 'localhost',
-        database: 'formsubmission',
-        password: '8235983451',
-        port: 5432,
-
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
     });
     client.connect()
     .then(()=>{

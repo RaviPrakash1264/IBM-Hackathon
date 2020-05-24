@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><!--I have copied this link from bootstrap site,take it from the first link written as css link-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><!--Below three links I have copied this link from bootstrap site,take it from the second  link written as js link -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>English</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2 class="display-4">Welcome to the English Quiz!</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="/students/english" method="post" class="needs-validation" novalidate>
+                    <p id="pfordirection">In the following questions choose the word which best expresses the meaning of the given word.</p>
+                    <p id="forphysicsque">1.CORPULENT</p>
+                    <ul>
+                        <li>
+                            Lean
+                        </li>
+                        <li>
+                            Gaunt
+                        </li>
+                        <li>
+                            Emaciated
+                        </li>
+                        <li>
+                            Obese
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt11" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">2.BRIEF</p>
+                      <ul>
+                        <li>
+                            Limited
+                        </li>
+                        <li>
+                            Small
+                        </li>
+                        <li>
+                            Little
+                        <li>
+                            Short
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt2" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">3.EMBEZZLE</p>
+                      <ul>
+                        <li>
+                            Misappropriate
+                        </li>
+                        <li>
+                            Balance
+                        </li>
+                        <li>
+                            Remunerate
+                        </li>
+                        <li>
+                            Clear
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt3" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">4.VENT</p>
+                      <ul>
+                        <li>
+                            Opening
+                        </li>
+                        <li>
+                            Stodge
+                        </li>
+                        <li>
+                            End
+                        </li>
+                        <li>
+                            Past tense of go
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt4" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">5.AUGUST</p>
+                      <ul>
+                        <li>
+                            Common
+                        </li>
+                        <li>
+                            Ridiculous
+                        </li>
+                        <li>
+                            Dignified
+                        <li>
+                            Petty
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt5" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <button type="submit" id="physicssubmission" class="btn btn-info">Submit</button>
+                    </form>
+                    <script>
+                        (function() {
+                         'use strict';
+                         window.addEventListener('load', function() {
+                           var forms = document.getElementsByClassName('needs-validation');
+                           var validation = Array.prototype.filter.call(forms, function(form) {
+                             form.addEventListener('submit', function(event) {
+                               if (form.checkValidity() === false) {
+                                 event.preventDefault();
+                                 event.stopPropagation();
+                               }
+                               form.classList.add('was-validated');
+                             }, false);
+                           });
+                         }, false);
+                       })();
+                       </script>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="skill1"><a href="mailto:ravimehra1264@gmail.com"><img id="forgmail" src="/gmail.png"></a></div>
+            <div class="skill2"><p id="forphone">+919102904391</p></div>
+            <div class="skill3"><img id="forcall" src="/for phone.png"></div>
+            <div class="skill4"><a href="/"><img src="/book.gif"></a></div>
+        </div>
+    </body>
+</html>

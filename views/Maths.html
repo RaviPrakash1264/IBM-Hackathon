@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><!--I have copied this link from bootstrap site,take it from the first link written as css link-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><!--Below three links I have copied this link from bootstrap site,take it from the second  link written as js link -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Maths</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2 class="display-4">Welcome to the Maths Quiz!</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="/students/maths" method="post" class="needs-validation" novalidate>
+                    <p id="forphysicsque">1.The total of the ages of Amar, Akbar and Anthony is 80 years. What was the total of their ages three years ago ?</p>
+                    <ul>
+                        <li>
+                            71 years 
+                        </li>
+                        <li>
+                            72 years
+                        </li>
+                        <li>
+                            74 years
+                        </li>
+                        <li>
+                            77 years  
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt11" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">2.Two bus tickets from city A to B and three tickets from city A to C cost Rs. 77 but three tickets from city A to B and two tickets from city A to C cost Rs. 73. What are the fares for cities B and C from A ?</p>
+                      <ul>
+                        <li>
+                            Rs. 4, Rs. 23  
+                        </li>
+                        <li>
+                            Rs. 13, Rs. 17
+                        </li>
+                        <li>
+                            Rs. 15, Rs. 14
+                        </li>
+                        <li>
+                            Rs. 17, Rs. 13
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt2" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">3.An institute organised a fete and 1/5 of the girls and 1/8 of the boys participated in the same. What fraction of the total number of students took part in the fete ?</p>
+                      <ul>
+                        <li>
+                            2/13
+                        </li>
+                        <li>
+                            13/40
+                        </li>
+                        <li>
+                            Data inadequate
+                        </li>
+                        <li>
+                            None of these
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt3" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">4.A number of friends decided to go on a picnic and planned to spend Rs. 96 on eatables. Four of them, however, did not turn up. As a consequence, the remaining ones had to contribute Rs. 4 each extra. The number of those who attended the picnic was</p>
+                      <ul>
+                        <li>
+                            8
+                        </li>
+                        <li>
+                            12
+                        </li>
+                        <li>
+                            16
+                        </li>
+                        <li>
+                            24
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt4" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <p id="forphysicsque2">5.A, B, C, D and E play a game of cards. A says to B, "If you give me three cards, you will have as many as E has and if I give you three cards, you will have as many as D has." A and B together have 10 cards more than what D and E together have. If B has two cards more than what C has and the total number of cards be 133, how many cards does B have ?</p>
+                      <ul>
+                        <li>
+                            22
+                        </li>
+                        <li>
+                            23
+                        </li>
+                        <li>
+                            25
+                        <li>
+                            35
+                    </ul>
+                    <div class="form-group">
+                        <label>Option</label>
+                        <input type="text" name="opt5" class="form-control" placeholder="Enter the option" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                      <button type="submit" id="physicssubmission" class="btn btn-info">Submit</button>
+                    </form>
+                    <script>
+                        (function() {
+                         'use strict';
+                         window.addEventListener('load', function() {
+                           var forms = document.getElementsByClassName('needs-validation');
+                           var validation = Array.prototype.filter.call(forms, function(form) {
+                             form.addEventListener('submit', function(event) {
+                               if (form.checkValidity() === false) {
+                                 event.preventDefault();
+                                 event.stopPropagation();
+                               }
+                               form.classList.add('was-validated');
+                             }, false);
+                           });
+                         }, false);
+                       })();
+                       </script>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="skill1"><a href="mailto:ravimehra1264@gmail.com"><img id="forgmail" src="/gmail.png"></a></div>
+            <div class="skill2"><p id="forphone">+919102904391</p></div>
+            <div class="skill3"><img id="forcall" src="/for phone.png"></div>
+            <div class="skill4"><a href="/"><img src="/book.gif"></a></div>
+        </div>
+    </body>
+</html>

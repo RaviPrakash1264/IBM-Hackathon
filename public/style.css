@@ -1,0 +1,199 @@
+#myVideo{
+    width: 100%;
+    opacity: 0.5;
+position: absolute;
+}
+#pforquiz{
+    font-size: 2em;
+}
+.quiz-container{
+position: absolute;
+   display: flex; 
+    margin-top: 20%;
+    margin-left: 30%;
+}
+#p2forquiz{
+    font-size: 2em;
+}
+.forparagraph{
+
+    margin-left: 40%;
+    position: absolute;
+}
+.forstudent{
+    
+    margin-left: 103%;
+}
+.forteacher{
+    margin-left: 5%;
+}
+.foror{
+    margin-left: 5%;
+}
+.forquestion{
+    margin-left: 217%;
+    position: absolute;
+    margin-top: -30%;
+}
+#hforquestion{
+    font-size: 9em;
+}
+.container1{
+background-color:black;
+    color:white;
+    margin-top: 20%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+.skill2{
+    margin-top: 0.8%;
+    font-size: 2em;
+    position: absolute;
+    margin-left: 16%;
+}
+.skill1{
+    margin-top: 0.8%;
+    position: absolute;
+    margin-left: 2%;
+    }
+.skill3{
+    margin-top: 0.9%;
+    margin-left: 14%;
+    position: absolute;
+    
+}
+.skill4{
+    margin-top: 0.6%;
+    
+    margin-left: 95%;
+}
+#foraboutus{
+    margin-top: 60%;
+    text-align: center;
+}
+#marginforaboutus{
+    width: 30%;
+    background-color: black;
+}
+#pforaboutus{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-style: italic;
+    font-size: 1.5em;
+}
+#forbrand{
+    margin-left: 2%;
+}
+#forgmail{
+    width: 7%;
+}
+#forphone{
+    margin-left: 5%;
+}
+#forcall{
+    width: 15%;
+}
+#forstudents1{
+    text-align: center;
+}
+#forsubject{
+    margin-left: 23%;
+}
+#forphysics{
+    margin-top: 15%;
+}
+#forchemistry{
+    margin-top: 3%;
+}
+#formaths{
+    margin-top: 3%;
+}
+#forenglish{
+    margin-top: 3%;
+}
+#forphysicsque{
+    font-size: 1.5em;
+}
+#forphysicsque2{
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+#physicssubmission{
+    margin-top: 5%;
+}
+#pfordirection{
+    font-size: 1.5em;
+}
+#imgthanku{
+    position: absolute;
+    margin-left: 34%;
+    opacity: 0.5;
+    margin-top: 8%;
+}
+#hfirst{
+    animation: type 4s steps(38) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 4px solid black;
+    width: 38ch;
+    margin-top: 15%;
+    margin-left: 25%;
+    position: absolute;
+    
+}
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 38ch;
+    }
+}
+.container12{
+    background-color:black;
+        color:white;
+        margin-top: 42%;
+        height: 10%;
+        display: flex;
+        position: absolute;
+        width: 100%;
+    }
+    #hfirst2{
+        animation: type1 4s steps(27) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+        border-right: 4px solid black;
+        width: 27ch;
+        margin-top: 15%;
+        margin-left: 28%;
+        position: absolute;
+        
+    }
+    @keyframes type1{
+        0%{
+            width: 0ch;
+        }
+        100%{
+            width: 27ch;
+        }
+    }
+#bforsubmission{
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 43%;
+}
+#imgthanku2{
+    position: absolute;
+    margin-left: 38%;
+    opacity: 0.5;
+    margin-top: 8%;
+}
+#bforsubmission2{
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 40%;
+}

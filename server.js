@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 5006 ;
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser') ;
@@ -211,6 +212,6 @@ app.post('/students/english',(request,response)=>{
    
 
 });
-app.listen(5006,()=>{
+app.listen(PORT,()=>{
     console.log('Listening to the server')
 })

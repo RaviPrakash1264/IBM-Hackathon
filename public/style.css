@@ -197,3 +197,20 @@ background-color:black;
     position: absolute;
     margin-left: 40%;
 }
+#portland1{
+    height: 235px;
+    width: 100%;
+}
+
+#forhack{
+    margin-top: 5%;
+}
+.Subject-Selection-con{
+    background-color:black;
+    color:white;
+    margin-top: 30%;
+    height: 10%;
+    display: flex;
+    
+    width: 100%;
+}

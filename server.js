@@ -118,7 +118,7 @@ app.post('/students/physics',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  physicsquiz(opt1,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
+        const sql= 'INSERT INTO  physicsquiz(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9,opt10) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)'
         const params = [request.body.opt11,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5];
         return client.query(sql,params);
     })
@@ -141,7 +141,7 @@ app.post('/students/chemistry',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  chemistryquiz(opt1,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
+        const sql= 'INSERT INTO  chemistryquiz(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9,opt10) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)'
         const params = [request.body.opt11,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5];
         return client.query(sql,params);
     })
@@ -165,7 +165,7 @@ app.post('/students/maths',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  mathsquiz(opt1,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
+        const sql= 'INSERT INTO  mathsquiz(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9,opt10) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)'
         const params = [request.body.opt11,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5];
         return client.query(sql,params);
     })
@@ -188,7 +188,7 @@ app.post('/students/english',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  englishquiz(opt1,opt2,opt3,opt4,opt5) VALUES ($1, $2, $3, $4, $5)'
+        const sql= 'INSERT INTO  englishquiz(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9,opt10) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)'
         const params = [request.body.opt11,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5];
         return client.query(sql,params);
     })

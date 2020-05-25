@@ -133,12 +133,12 @@ background-color:black;
     margin-top: 8%;
 }
 #hfirst{
-    animation: type 4s steps(38) infinite;
+    animation: type 4s steps(34) infinite;
     overflow: hidden;
     white-space: nowrap;
     font-family: Arial, Helvetica, sans-serif;
     border-right: 4px solid black;
-    width: 38ch;
+    width: 34ch;
     margin-top: 15%;
     margin-left: 25%;
     position: absolute;
@@ -149,7 +149,7 @@ background-color:black;
         width: 0ch;
     }
     100%{
-        width: 38ch;
+        width: 34ch;
     }
 }
 .container12{

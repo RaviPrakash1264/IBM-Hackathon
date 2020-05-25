@@ -49,7 +49,7 @@ app.post('/students/add',(request,response)=>{
     .then(()=>{
         console.log('Connection Complete');
         const sql= 'INSERT INTO  submission(name,email,phone_number) VALUES ($1, $2, $3)'
-        const params = [request.body.opt1,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5,request.body.opt6,request.body.opt7,request.body.opt8,request.body.opt9,request.body.opt10];
+        const params = [request.body.name,request.body.email,request.body.phone_number];
         return client.query(sql,params);
     })
     .then((result)=>{
@@ -72,7 +72,7 @@ app.post('/teachers/add',(request,response)=>{
     .then(()=>{
         console.log('Connection Complete');
         const sql= 'INSERT INTO  submission2(name,email,phone_number,subject) VALUES ($1, $2, $3, $4)'
-        const params = [request.body.opt1,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5,request.body.opt6,request.body.opt7,request.body.opt8,request.body.opt9,request.body.opt10];
+        const params = [request.body.name,request.body.email,request.body.phone_number,request.body.subject];
         return client.query(sql,params);
     })
     .then((result)=>{
@@ -96,7 +96,7 @@ app.post('/teachers/addque',(request,response)=>{
     .then(()=>{
         console.log('Connection Complete');
         const sql= 'INSERT INTO  addque(que1,que2,que3,que4,que5) VALUES ($1, $2, $3, $4, $5)'
-        const params = [request.body.opt1,request.body.opt2,request.body.opt3,request.body.opt4,request.body.opt5,request.body.opt6,request.body.opt7,request.body.opt8,request.body.opt9,request.body.opt10];
+        const params = [request.body.que1,request.body.que2,request.body.que3,request.body.que4,request.body.que5];
         return client.query(sql,params);
     })
     .then((result)=>{

@@ -229,3 +229,9 @@ background-color:black;
 #bforquiz2{
     animation: mymove 3s infinite;
 }
+#forstudents1{
+    animation: mymove 3s infinite;
+}
+.form-group{
+    animation: mymove 3s infinite;
+}

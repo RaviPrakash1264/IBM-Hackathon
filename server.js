@@ -95,8 +95,8 @@ app.post('/teachers/addque',(request,response)=>{
     client.connect()
     .then(()=>{
         console.log('Connection Complete');
-        const sql= 'INSERT INTO  addque(que1,que2,que3,que4,que5) VALUES ($1, $2, $3, $4, $5)'
-        const params = [request.body.que1,request.body.que2,request.body.que3,request.body.que4,request.body.que5];
+        const sql= 'INSERT INTO  addque(que1,que2,que3,que4,que5,que6,que7,que8,que9,que10) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)'
+        const params = [request.body.que1,request.body.que2,request.body.que3,request.body.que4,request.body.que5,request.body.que6,request.body.que7,request.body.que8,request.body.que9,request.body.que10];
         return client.query(sql,params);
     })
     .then((result)=>{

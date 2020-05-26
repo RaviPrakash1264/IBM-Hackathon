@@ -78,16 +78,19 @@ background-color:black;
 #foraboutus{
     margin-top: 60%;
     text-align: center;
+    animation: mymove 3s infinite;
 }
 #marginforaboutus{
     width: 30%;
     background-color: black;
+    animation: mymove 3s infinite;
 }
 #pforaboutus{
     margin-left: 25%;
     margin-right: 25%;
     font-style: italic;
     font-size: 1.5em;
+    animation: mymove 3s infinite;
 }
 #forbrand{
     margin-left: 2%;

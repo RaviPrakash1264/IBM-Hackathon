@@ -5,6 +5,10 @@ position: absolute;
 }
 #pforquiz{
     font-size: 2em;
+    animation: mymove 3s infinite;
+}
+@keyframes mymove{
+    50%{text-shadow: 2.5px 5px 7.5px blue;}
 }
 .quiz-container{
 position: absolute;
